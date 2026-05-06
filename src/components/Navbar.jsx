@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react'
+import { Menu, X, GitBranch, Mail, Share2 } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 export default function Navbar() {
@@ -45,11 +45,11 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <a href="https://github.com/shank885" target="_blank" rel="noopener noreferrer"
               className="p-2 hover:bg-secondary rounded-lg transition-colors">
-              <Github size={20} className="text-gray-300 hover:text-accent" />
+              <GitBranch size={20} className="text-gray-300 hover:text-accent" />
             </a>
             <a href="https://linkedin.com/in/shank885" target="_blank" rel="noopener noreferrer"
               className="p-2 hover:bg-secondary rounded-lg transition-colors">
-              <Linkedin size={20} className="text-gray-300 hover:text-accent" />
+              <Share2 size={20} className="text-gray-300 hover:text-accent" />
             </a>
             <a href="mailto:shashankshekhar885@gmail.com"
               className="p-2 hover:bg-secondary rounded-lg transition-colors">

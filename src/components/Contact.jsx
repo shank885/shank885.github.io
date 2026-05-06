@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Github, Linkedin, Send } from 'lucide-react'
+import { Mail, Phone, MapPin, GitBranch, Share2, Send } from 'lucide-react'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -54,13 +54,13 @@ export default function Contact() {
 
   const socialLinks = [
     {
-      icon: Github,
+      icon: GitBranch,
       name: 'GitHub',
       url: 'https://github.com/shank885',
       label: 'github.com/shank885'
     },
     {
-      icon: Linkedin,
+      icon: Mail,
       name: 'LinkedIn',
       url: 'https://linkedin.com/in/shank885',
       label: 'linkedin.com/in/shank885'

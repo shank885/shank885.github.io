@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react'
+import { GitBranch, Share2, Mail, ExternalLink } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -12,8 +12,8 @@ export default function Footer() {
   ]
 
   const socialLinks = [
-    { icon: Github, url: 'https://github.com/shank885', label: 'GitHub' },
-    { icon: Linkedin, url: 'https://linkedin.com/in/shank885', label: 'LinkedIn' },
+    { icon: GitBranch, url: 'https://github.com/shank885', label: 'GitHub' },
+    { icon: Share2, url: 'https://linkedin.com/in/shank885', label: 'LinkedIn' },
     { icon: Mail, url: 'mailto:shashankshekhar885@gmail.com', label: 'Email' }
   ]
 
