@@ -8,7 +8,7 @@ export default function Footer() {
     { name: 'Home', href: '/#home' },
     { name: 'About', href: '/#about' },
     { name: 'Experience', href: '/#experience' },
-    { name: 'Blog', href: '/blog' }
+    { name: 'Blog', href: '#/blog' }
   ]
 
   const socialLinks = [
