@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, GitBranch, Share2, Send } from 'lucide-react'
+import { Mail, Phone, MapPin, Send } from 'lucide-react'
+import { FaGithub, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -54,16 +55,22 @@ export default function Contact() {
 
   const socialLinks = [
     {
-      icon: GitBranch,
+      icon: FaGithub,
       name: 'GitHub',
       url: 'https://github.com/shank885',
-      label: 'github.com/shank885'
+      color: 'hover:bg-gray-700'
     },
     {
-      icon: Mail,
+      icon: FaLinkedinIn,
       name: 'LinkedIn',
       url: 'https://linkedin.com/in/shank885',
-      label: 'linkedin.com/in/shank885'
+      color: 'hover:bg-blue-600'
+    },
+    {
+      icon: FaXTwitter,
+      name: 'X (Twitter)',
+      url: 'https://x.com/shank885',
+      color: 'hover:bg-black'
     }
   ]
 
@@ -133,10 +140,10 @@ export default function Contact() {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-3 bg-primary/50 rounded-lg border border-secondary hover:bg-accent hover:border-accent text-gray-300 hover:text-white transition-all"
+                      className={`p-3 bg-primary/50 rounded-lg border border-secondary ${social.color} hover:border-transparent text-gray-300 hover:text-white transition-all`}
                       title={social.name}
                     >
-                      <Icon size={24} />
+                      <Icon size={22} />
                     </a>
                   )
                 })}
